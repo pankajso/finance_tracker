@@ -1,0 +1,30 @@
+%p#notice= notice
+
+%p
+  %b Amount:
+  = @expence.amount
+%p
+  %b Description:
+  = @expence.description
+%p
+  %b Date:
+  = @expence.date
+%p
+  %b Category:
+  = @expence.category_id
+%p
+  %b Payment mode:
+  = @expence.payment_mode_id
+%p
+  %b Inword:
+  = @expence.inword
+%p
+  %b Invoice:
+  = @expence.invoice
+%p
+  %b User:
+  = @expence.user_id
+
+= link_to 'Edit', edit_expence_path(@expence)
+\|
+= link_to 'Back', expences_path

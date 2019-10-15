@@ -2,14 +2,15 @@
   %button.navbar-toggler{"aria-controls" => "navbarTogglerDemo01", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarTogglerDemo01", "data-toggle" => "collapse", :type => "button"}
     %span.navbar-toggler-icon
   #navbarTogglerDemo01.collapse.navbar-collapse
-    %a.navbar-brand{:href => "#"} ET
+    =link_to("ET",root_path, class:  "navbar-brand")
+
     %ul.navbar-nav.mr-auto.mt-2.mt-lg-0
       %li.nav-item.active
-        %a.nav-link{:href => "#"}
-          Home
-          %span.sr-only (current)
+        =link_to("Home",root_path, class:  "nav-link")
+
       %li.nav-item
-        %a.nav-link{:href => "#"} Link
+        =link_to("Add Expence",new_expence_path, class:  "nav-link")
+        
     %form.form-inline.my-2.my-lg-0
       %input.form-control.mr-sm-2{"aria-label" => "Search", :placeholder => "Search", :type => "search"}/
       %button.btn.btn-outline-success.my-2.my-sm-0{:type => "submit"} Search
